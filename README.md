@@ -15,9 +15,8 @@ As written before, the BlockDrop implementation is mainly based on https://githu
 
 ## Steps of BlockDrop and the name of the script (in brackets: where to find pretrained versions to start at this step)
 1. train ResNet --> rnet_single.ipynb 
-2. train Policy Net* --> policy_train.ipynb (input: cv/trained_rnet)
-3. Joint finetuning of Policy and ResNet* --> finetuning.ipynb (input: cv/trained_policy)
-4. Inference*  --> test.ipynb (input: cv/finetuned)
+2. train Policy Net and finetuning* --> blockdrop_training.ipynb (input: cv/trained_rnet)
+4. Inference*  --> blockdrop_inference.ipynb (input: cv/finetuned)
 
 steps with a "*" are adjusted based on the original BlockDrop implementation. The others are completely implemented by myself.
 
@@ -41,9 +40,8 @@ For the experiment, BlockDrop is compared to a sole ResNet. For this, the follow
 ```blockdrop_training.ipynb```: executes the Policy Net training and joint finetuning and measures the time in seconds for later comparision
 
 ```blockdrop_test.ipynb```: a simplified testing script (compared to original BlockDrop test script) to have similar conditions for the testing of both, BlockDrop and the sole ResNet
-As addition to this simplified testing, the pretrained ResNet of the original implementation was compared to BlockDrop using the original testing script: ```test.ipyn```
+As addition to this simplified testing, the pretrained ResNet of the original implementation was compared to BlockDrop using the original testing script: ```test.ipynb```
 For the pretrained ResNet, the policy net was discarded and the input for the ResNet was simply set to 1 for the complete dropping vector. 
 
-The result of the experiment can be read in the article xxxx.
-In short:
+The results of the experiment can be read in the article "How to improve your deep learning performance using BlockDrop".
 
