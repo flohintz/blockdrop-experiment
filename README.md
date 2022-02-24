@@ -11,7 +11,7 @@ To do so, the following steps were done:
 4. Implement a sole ResNet, which is used as comparison to blockdrop: rnet_single
 
 ## Steps of BlockDrop and the name of the script (in brackets: where to find pretrained versions to start at this step)
-1. train ResNet --> rnet_single.ipynb 
+1. train ResNet --> rnet_sole.ipynb 
 2. train Policy Net and finetuning* --> blockdrop_training.ipynb (input: cv/trained_rnet)
 4. Inference*  --> blockdrop_inference.ipynb (input: cv/finetuned)
 
