@@ -1,6 +1,6 @@
 # blockdrop-experiment
 
-## Testing of BlockDrop: 
+## Blockdrop extension: 
 
 This code is an addition and modification of the original implementation of BlockDrop (https://github.com/Tushar-N/blockdrop) and is part of the article "How to improve your deep learning performance using BlockDrop". 
 The goal of this implementation was to find out when BlockDrop is benefitial in comparison to a sole ResNet.
@@ -9,9 +9,6 @@ To do so, the following steps were done:
 2. Add an additional script which measures the time of the training: blockdrop_training
 3. Add an additiona script which measures the time of inference: blockdrop_test
 4. Implement a sole ResNet, which is used as comparison to blockdrop: rnet_single
-
-### BlockDrop Implementation:
-As written before, the BlockDrop implementation is mainly based on https://github.com/Tushar-N/blockdrop and was only adapted for my experiment and for Python 3.
 
 ## Steps of BlockDrop and the name of the script (in brackets: where to find pretrained versions to start at this step)
 1. train ResNet --> rnet_single.ipynb 
@@ -36,7 +33,7 @@ This is the case as all variables are included within the script in this impleme
 
 ## The experiment:
 For the experiment, BlockDrop is compared to a sole ResNet. For this, the following scripts were created:
-```rnet_single.ipynb```: creating an own ResNet implementation to compare it to BlockDrop --> includes both training and testing
+```rnet_sole.ipynb```: creating an own ResNet implementation to compare it to BlockDrop --> includes both training and testing
 ```blockdrop_training.ipynb```: executes the Policy Net training and joint finetuning and measures the time in seconds for later comparision
 
 ```blockdrop_test.ipynb```: a simplified testing script (compared to original BlockDrop test script) to have similar conditions for the testing of both, BlockDrop and the sole ResNet
