@@ -159,11 +159,11 @@ def get_dataset(model, root='data/'):
     transform_train, transform_test = get_transforms(rnet, dset)
 
     if dset=='C10':
-        trainset = torchdata.CIFAR10(root=root, train=True, download=False, transform=transform_train)
-        testset = torchdata.CIFAR10(root=root, train=False, download=False, transform=transform_test)
+        trainset = torchdata.CIFAR10(root=root, train=True, download=True, transform=transform_train)
+        testset = torchdata.CIFAR10(root=root, train=False, download=True, transform=transform_test)
     elif dset=='C100':
-        trainset = torchdata.CIFAR100(root=root, train=True, download=False, transform=transform_train)
-        testset = torchdata.CIFAR100(root=root, train=False, download=False, transform=transform_test)
+        trainset = torchdata.CIFAR100(root=root, train=True, download=True, transform=transform_train)
+        testset = torchdata.CIFAR100(root=root, train=False, download=True, transform=transform_test)
     elif dset=='ImgNet':
         trainset = torchdata.ImageFolder(root+'/train/', transform_train)
         testset = torchdata.ImageFolder(root+'/val/', transform_test)
