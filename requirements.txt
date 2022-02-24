@@ -1,0 +1,7 @@
+torch~=1.10.0
+tqdm
+numpy
+torchdata
+torchvision~=0.11.2
+tensorboard_logger
+timeit
