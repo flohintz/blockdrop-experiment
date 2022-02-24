@@ -4,4 +4,3 @@ numpy
 torchdata
 torchvision~=0.11.2
 tensorboard_logger
-timeit
