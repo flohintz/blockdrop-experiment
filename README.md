@@ -8,7 +8,7 @@ To do so, the following steps were done:
 1. Bring BlockDrop up-to-date (Python2 --> Python 3) and comment the code 
 2. Add an additional script which measures the time of the training: blockdrop_training
 3. Add an additiona script which measures the time of inference: blockdrop_test
-4. Implement a sole ResNet, which is used as comparison to blockdrop: rnet_single
+4. Implement a sole ResNet, which is used as comparison to blockdrop: rnet_sole
 
 ## Steps of BlockDrop and the name of the script (in brackets: where to find pretrained versions to start at this step)
 1. train ResNet --> rnet_sole.ipynb 
