@@ -24,7 +24,9 @@ The pretrained versions can be found under cv/. There are different pretrained v
 Since there are different pretrained models available, the following list describes, which is used as "standard" version for each of the notebooks. All of them are also available in the original BlockDrop implementation.
 
 train Policy Net: cv/trained_rnet/R110_C10/pk_E_130_A_0.932.t7
+
 Joint finetuning of Policy and ResNet: cv/trained_policy/R110_C10/ckpt_E_100.t7
+
 Inference: cv/finetuned/R110_C10/ckpt_E_2000_A_0.936_R_1.95E-01_S_16.93_#_469.t7
 
 ## Run the notebook:
